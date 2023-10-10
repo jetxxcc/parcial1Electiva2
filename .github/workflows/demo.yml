@@ -1,0 +1,17 @@
+name: Saludo Hola Mundo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout del código
+      uses: actions/checkout@v2
+
+    - name: Imprimir Hola Mundo
+      run: echo "Hola Mundo"
